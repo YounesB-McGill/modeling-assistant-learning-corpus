@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="modelingassistant" nsURI="http://cs.mcgill.ca/sel/modelingassistant/1.0"
+    nsPrefix="modelingassistant">
+  <eClassifiers xsi:type="ecore:EDataType" name="Time" instanceClassName="java.sql.Time"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelingAssistant">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="problemStatements" upperBound="-1"
+        eType="#//ProblemStatement" containment="true" eOpposite="#//ProblemStatement/modelingAssistant"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="solutions" upperBound="-1"
+        eType="#//Solution" containment="true" eOpposite="#//Solution/modelingAssistant"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="students" upperBound="-1"
+        eType="#//Student" containment="true" eOpposite="#//Student/modelingAssistant"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="studentKnowledges" upperBound="-1"
+        eType="#//StudentKnowledge" containment="true" eOpposite="#//StudentKnowledge/modelingAssistant"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Student" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modelingAssistant" lowerBound="1"
+        eType="#//ModelingAssistant" eOpposite="#//ModelingAssistant/students"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="solutions" upperBound="-1"
+        eType="#//Solution" eOpposite="#//Solution/student"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="studentKnowledges" upperBound="-1"
+        eType="#//StudentKnowledge" eOpposite="#//StudentKnowledge/student"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="currentSolution" eType="#//Solution"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProblemStatement" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="problemStatementElements"
+        upperBound="-1" eType="#//ProblemStatementElement" containment="true" eOpposite="#//ProblemStatementElement/problemStatement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modelingAssistant" lowerBound="1"
+        eType="#//ModelingAssistant" eOpposite="#//ModelingAssistant/problemStatements"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="studentSolutions" upperBound="-1"
+        eType="#//Solution"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instructorSolution" lowerBound="1"
+        eType="#//Solution"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProblemStatementElement" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="problemStatement" lowerBound="1"
+        eType="#//ProblemStatement" eOpposite="#//ProblemStatement/problemStatementElements"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="solutionElements" upperBound="-1"
+        eType="#//SolutionElement" eOpposite="#//SolutionElement/problemStatementElements"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Solution">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modelingAssistant" lowerBound="1"
+        eType="#//ModelingAssistant" eOpposite="#//ModelingAssistant/solutions"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="student" eType="#//Student"
+        eOpposite="#//Student/solutions"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="solutionElements" upperBound="-1"
+        eType="#//SolutionElement" containment="true" eOpposite="#//SolutionElement/solution"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classDiagram" lowerBound="1"
+        eType="ecore:EClass ../../ca.mcgill.sel.classdiagram/model/classdiagram.ecore#//ClassDiagram"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mistakes" upperBound="-1"
+        eType="#//Mistake" containment="true" eOpposite="#//Mistake/solution"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tagGroups" upperBound="-1"
+        eType="#//TagGroup" containment="true" eOpposite="#//TagGroup/solution"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="problemStatement" lowerBound="1"
+        eType="#//ProblemStatement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="feedbackItems" upperBound="-1"
+        eType="#//FeedbackItem" containment="true" eOpposite="#//FeedbackItem/solution"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SolutionElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="problemStatementElements"
+        upperBound="-1" eType="#//ProblemStatementElement" eOpposite="#//ProblemStatementElement/solutionElements"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="solution" lowerBound="1"
+        eType="#//Solution" eOpposite="#//Solution/solutionElements"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="studentElementMistakes"
+        upperBound="-1" eType="#//Mistake" eOpposite="#//Mistake/studentElements"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="element" lowerBound="1"
+        eType="ecore:EClass ../../ca.mcgill.sel.classdiagram/model/classdiagram.ecore#//NamedElement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instructorElementMistakes"
+        upperBound="-1" eType="#//Mistake" eOpposite="#//Mistake/instructorElements"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tags" upperBound="-1" eType="#//Tag"
+        containment="true" eOpposite="#//Tag/solutionElement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="synonyms" upperBound="-1"
+        eType="#//Synonym" containment="true" eOpposite="#//Synonym/solutionElement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StudentKnowledge">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="levelOfKnowledge" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"
+        defaultValueLiteral="5.0"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="student" lowerBound="1"
+        eType="#//Student" eOpposite="#//Student/studentKnowledges"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modelingAssistant" lowerBound="1"
+        eType="#//ModelingAssistant" eOpposite="#//ModelingAssistant/studentKnowledges"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mistakeType" eType="ecore:EClass learningcorpus.ecore#//MistakeType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Mistake">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="resolvedByStudent" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeToAddress" eType="#//Time"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numStepsBeforeNotification"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="studentElements" upperBound="-1"
+        eType="#//SolutionElement" eOpposite="#//SolutionElement/studentElementMistakes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lastFeedback" eType="#//FeedbackItem"
+        eOpposite="#//FeedbackItem/mistake"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instructorElements" upperBound="-1"
+        eType="#//SolutionElement" eOpposite="#//SolutionElement/instructorElementMistakes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="solution" lowerBound="1"
+        eType="#//Solution" eOpposite="#//Solution/mistakes"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numDetections" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numSinceResolved" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mistakeType" eType="ecore:EClass learningcorpus.ecore#//MistakeType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FeedbackItem">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mistake" eType="#//Mistake"
+        eOpposite="#//Mistake/lastFeedback"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="usefulness" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="feedback" eType="ecore:EClass learningcorpus.ecore#//Feedback"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="solution" lowerBound="1"
+        eType="#//Solution" eOpposite="#//Solution/feedbackItems"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Tag">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="solutionElement" lowerBound="1"
+        eType="#//SolutionElement" eOpposite="#//SolutionElement/tags"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tagGroup" lowerBound="1"
+        eType="#//TagGroup" eOpposite="#//TagGroup/tags"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tagType" eType="#//TagType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TagGroup">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tags" upperBound="-1" eType="#//Tag"
+        eOpposite="#//Tag/tagGroup"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="solution" lowerBound="1"
+        eType="#//Solution" eOpposite="#//Solution/tagGroups"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TagType">
+    <eLiterals name="Abstraction" literal="Abstraction"/>
+    <eLiterals name="Occurrence" value="1"/>
+    <eLiterals name="Player" value="2"/>
+    <eLiterals name="Role" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Synonym" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="solutionElement" lowerBound="1"
+        eType="#//SolutionElement" eOpposite="#//SolutionElement/synonyms"/>
+  </eClassifiers>
+</ecore:EPackage>

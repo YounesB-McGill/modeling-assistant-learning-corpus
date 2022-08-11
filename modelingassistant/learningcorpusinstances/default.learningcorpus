@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<learningcorpus:LearningCorpus xmlns:xmi="http://www.omg.org/XMI" xmlns:learningcorpus="http://cs.mcgill.ca/sel/modelingassistant/learningcorpus/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:learningcorpusquiz="http://cs.mcgill.ca/sel/modelingassistant/learningcorpusquiz/1.0" xmi:id="3bd0789d-8313-409c-bcd7-c21c067a4d70" xmi:version="2.0">
+  <learningItems xsi:type="learningcorpus:LearningItem" xmi:id="695a90f7-5425-48c2-b90c-8b8785d6109b" name="DomainModeling"/>
+  <learningItems xsi:type="learningcorpus:LearningItem" xmi:id="8f6e3107-858e-4fcc-a422-57c8a21aaed6" mistakeTypes="214229db-1a44-431b-adcf-8748169a3f88 520eb47b-3c43-4f8e-962b-bc9023627352 fc8d6b47-6807-41ae-afc3-fa5fa90d0425" name="Class"/>
+  <learningItems xsi:type="learningcorpus:LearningItem" xmi:id="b453c98f-45e1-48c9-a673-ef47b0bab971" mistakeTypes="e0d38b7f-bda9-468d-b684-7672142596fb ce588250-cc62-4639-97ac-a36cfc5bd6bf 9d83f996-d0f6-4268-9e75-d783a2f9dda1" name="Attribute"/>
+  <learningItems xsi:type="learningcorpus:LearningItem" xmi:id="e8dcdbf7-b38c-4d8b-b7be-63603bf8b835" mistakeTypes="440e9c46-0851-42c3-a55d-fb8019e3560b bac099d0-1b93-4617-8276-2187a2c64ba6" name="Association"/>
+  <learningItems xsi:type="learningcorpus:LearningItem" xmi:id="27ee26dd-fd8f-4820-bcc1-2ee0c678810a" mistakeTypes="6079b5d5-11f0-4fda-b8bf-c74b058ec2ca 0c74cb01-9b70-4446-bf95-326faf9cb442 9fd37651-51d7-450b-b11c-c873181e0fb2" name="AssociationEnd"/>
+  <learningItems xsi:type="learningcorpus:LearningItem" xmi:id="f3de7f74-9ec9-42af-9271-cd6ab4794d99" mistakeTypes="26f7816b-4d24-4c70-826a-9527f7cd67bd" name="Composition"/>
+  <learningItems xsi:type="learningcorpus:LearningItem" xmi:id="fe072300-d998-4e22-b462-01c496a9c5ae" mistakeTypes="ca2cd7c8-434f-492e-9a8e-9413f46e77ae" name="Generalization"/>
+  <learningItems xsi:type="learningcorpus:LearningItem" xmi:id="9566af68-af2b-4f59-b0c2-6f41e6877218" mistakeTypes="6886714c-6515-418e-8713-a6387daffb64" name="DesignPatterns"/>
+  <learningResources xsi:type="learningcorpus:Reference" xmi:id="8ac1a9e7-d2eb-4956-ae9f-97e3e3ca45ac" content="Please review the [Classes](https://mycourses2.mcgill.ca/) part of the Class Diagram lecture." resourceResponses="905b0412-9d90-49aa-8418-7f9af17ae061"/>
+  <learningResources xsi:type="learningcorpus:Example" xmi:id="2fa97957-50a0-4ea3-a7f2-13ffde8b137d" content="Please note these examples of correct vs incorrect class naming:&#10;:x: Examples to avoid | :heavy_check_mark: Good class names&#10;--- | ---&#10;pilot | Pilot&#10;Airplanes | Airplane &#10;AirlineData | Airline" resourceResponses="df8d9fa2-a0e7-49b3-9460-f8ddfd1f00ae 1c55c2c7-4874-4759-91ec-955e1fc32606"/>
+  <learningResources xsi:type="learningcorpus:Reference" xmi:id="0f6b012c-4875-4c7a-a5f0-0f87a7f31447" content="Please review the [Classes](https://mycourses2.mcgill.ca/) part of the Class Diagram lecture." resourceResponses="9b83ea5d-dbb0-4908-864b-280301f21127 909fe06b-73b7-4202-a731-8335a0bcc0bb"/>
+  <learningResources xsi:type="learningcorpusquiz:ListMultipleChoiceQuiz" xmi:id="34a1414f-570c-4807-a32f-c7891c81140a" resourceResponses="f59984fd-e21b-40f9-9016-c60a2289765a" correctChoices="ee80bc60-4369-4a2b-84dd-530729145cea f8b8b4c1-c5f0-4e41-b9bb-ea1302227c9b" content="Select all the correct attribute names from the list below.">
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="781693c4-dfb2-452a-bbe5-e2187f958260" text="needsReciept"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="ee80bc60-4369-4a2b-84dd-530729145cea" text="numberOfItems"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="fc3c4b0d-11d4-4cc2-abbf-ca4615bb8355" text="ID"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="cf5a94d1-ea26-498e-b59c-8166972c00c7" text="numItems"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="28a8cd08-8cb4-473e-8d1d-2139e5ecb4a3" text="Name"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="f8b8b4c1-c5f0-4e41-b9bb-ea1302227c9b" text="identifier"/>
+  </learningResources>
+  <learningResources xsi:type="learningcorpus:Reference" xmi:id="e507ff4f-1d61-4b0c-9396-60872da90046" content="Please review the [Attribute](https://mycourses2.mcgill.ca/) and [Noun Analysis](https://mycourses2.mcgill.ca/) parts of the Class Diagram lecture." resourceResponses="5b751985-9332-47e6-80f4-e58cbec960e3 4b14f513-d5f8-4757-801e-e88e2d8d6782 6eeeb547-dfb1-43d9-afcd-816d9ae05e9a"/>
+  <learningResources xsi:type="learningcorpusquiz:ListMultipleChoiceQuiz" xmi:id="d692dcff-c86e-4c1b-98a8-8c82aaa66446" resourceResponses="20837393-f26f-47be-b925-bb8a1080d66b" correctChoices="4a9a853e-3e2a-4cb1-88d4-e79c6d80c155" content="Pick the classes which are modeled correctly with Umple.">
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="e50176a8-25cc-4791-94a2-744718a0d817" text="class Student { courses; }"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="61f576e8-d5e1-4e6f-868d-755f39560897" text="class Folder { List&lt;File&gt; files; }"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="4a9a853e-3e2a-4cb1-88d4-e79c6d80c155" text="class Restaurant { 1 -- * Employee; }"/>
+  </learningResources>
+  <learningResources xsi:type="learningcorpus:Reference" xmi:id="20cdae15-eb22-419f-93cc-6234eab9aecc" content="Please review the _Composition vs. Aggregation vs. Association_ section of &#10;the [UML Class Diagram lecture slides](https://mycourses2.mcgill.ca/) to &#10;better understand these relationships and where they are used.&#10;&#10;![composition vs aggregation vs association](images/composition_aggregation_association.png)" resourceResponses="d5c104da-8c3d-423b-8878-739a38693056 e512bcc4-0fcd-499d-a985-5b69a31d54ae e0d9676c-1586-414c-a2a4-5e40de98357a"/>
+  <learningResources xsi:type="learningcorpusquiz:ListMultipleChoiceQuiz" xmi:id="42343ed2-fe78-4b15-85b7-2ed663371cab" resourceResponses="3b39752c-5ce0-4be6-bb4e-5105dd9cfb31" correctChoices="5e58684b-19e6-4ec8-8866-33c775678a9e" content="Pick the class(es) modeled correctly in Umple.">
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="f80457a1-41ab-440a-9656-2ffa41a58b8b" text="class BankAccount { Client client; }"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="5e58684b-19e6-4ec8-8866-33c775678a9e" text="class BankAccount { * -- 1..2 Client clients; }; class Client {}"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="adf02515-d859-4bef-ab44-c7547931de61" text="class BankAccount { 1..2 -- * Client clients; }; class Client {}"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="611f45d8-dbc7-441c-b905-3056d5a760ae" text="class Loan { libraryPatron; }"/>
+  </learningResources>
+  <learningResources xsi:type="learningcorpusquiz:ListMultipleChoiceQuiz" xmi:id="f793785f-7676-48ed-a61a-6420ae212159" resourceResponses="719f1fc8-3a47-4b7b-acc2-1f2fe5f27f44" correctChoices="23c869b6-bef4-4f49-a860-9547c23a90ea ea0f8371-1a7d-496f-a142-adb41a0366a2 8a1b1824-acce-4f0e-8370-2421251c40e4" content="Pick the association(s) with correct multiplicities:">
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="d83135bb-39f1-43cf-ad83-2cc09a73ad13" text="1 EmployeeRole -- 1 Person;"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="23c869b6-bef4-4f49-a860-9547c23a90ea" text="* Episode -- 1 TvSeries;"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="209add96-aeb3-4b7b-a3fa-ca9448723e80" text="* Bank -- 1 Client;"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="cac4eede-687f-4dc8-8fe4-1a02a67e96af" text="* Client -- 1 BankAccount;"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="ea0f8371-1a7d-496f-a142-adb41a0366a2" text="0..2 Loan -- 1 Client;"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="37dd8b88-2aed-4389-8ae7-9f54ca81ce85" text="* Person -- 1 EmployeeRole;"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="8a1b1824-acce-4f0e-8370-2421251c40e4" text="* EmployeeRole -- 1 Person;"/>
+  </learningResources>
+  <learningResources xsi:type="learningcorpus:Reference" xmi:id="36de04af-a43d-4bc4-bd33-b92981412f6b" content="Please review the [multiplicities](https://mycourses2.mcgill.ca/) part of the Class Diagram lecture." resourceResponses="e3f295ac-0842-41c6-ad03-2876af5cc7b3"/>
+  <learningResources xsi:type="learningcorpus:Reference" xmi:id="12714eb9-647a-4b0d-98f6-48912f0fd2ed" content="Can you think of appropriate [role names](https://mycourses2.mcgill.ca/)&#10;for this relationship? Role names help identify the role a class plays in a&#10;relationship and are particularly important if there is more than one relationship&#10;between the same two classes.&#10;&#10;![Role name](images/role_name.png)&#10;" resourceResponses="20da5348-5eeb-4a2c-b16f-82160373f45f 26b16975-212e-43bf-ba20-c33d84d9b2dc"/>
+  <learningResources xsi:type="learningcorpus:Example" xmi:id="8b9b385e-05ec-4f8e-88d7-40d7f8c1b1e1" content="Observe the following domain model. Every single class except the root class is directly or&#10;indirectly contained in the root class, `PISystem`.&#10;&#10;![PISystem](images/PISystem.png)" resourceResponses="e29e24eb-9c1e-4242-a023-6bd642cc7f8b"/>
+  <learningResources xsi:type="learningcorpusquiz:ListMultipleChoiceQuiz" xmi:id="b5cfcb18-a262-4ec4-b3e5-b792d281120f" resourceResponses="d9ad8d30-570f-4c24-aba6-312dc8247edd" correctChoices="2190fdfe-e8cf-4bfa-a2e8-ebe4e99222bd 1609cf03-eded-4da7-8eb7-f8888316ed7e 47a02a92-51ac-4f3f-91bb-698422de3037" content="Which of the following compositions should be part of the containment tree for the following&#10;model?&#10;&#10;![IRS](images/IRS.png)">
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="2190fdfe-e8cf-4bfa-a2e8-ebe4e99222bd" text="1 IRS &lt;@&gt;- * StudentRole"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="1609cf03-eded-4da7-8eb7-f8888316ed7e" text="1 IRS &lt;@&gt;- * Person"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="45edef5c-db85-4315-a750-b0c92d14824c" text="1 IRS &lt;@&gt;- * Game"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="47a02a92-51ac-4f3f-91bb-698422de3037" text="1 IRS &lt;@&gt;- * League"/>
+    <choices xsi:type="learningcorpusquiz:Choice" xmi:id="fc01e947-17b4-4714-b7b9-454ae80645ce" text="1 IRS &lt;@&gt;- * RegularLeague"/>
+  </learningResources>
+  <learningResources xsi:type="learningcorpusquiz:FillInTheBlanksQuiz" xmi:id="253fdd17-ef7a-4e5b-954b-f75a1b08d91b" content="Place the following classes in an inheritance hierarchy: Vehicle, Wheel, LuxuryBus, Airplane, Car, Driver, LandVehicle, Bus. Only use a term once." resourceResponses="596fe785-c2a5-4413-891f-4d26a72e410b">
+    <statements xsi:type="learningcorpusquiz:FillInTheBlanksQuizStatement" xmi:id="a1fbc616-09fe-4d19-ad9a-3070e42cbdf7">
+      <components xsi:type="learningcorpusquiz:NonBlank" xmi:id="3b5f1993-ee92-47fc-9f30-cdbc72766271" text="SportsCar isA "/>
+      <components xsi:type="learningcorpusquiz:Blank" xmi:id="3f599b7a-80be-4d92-b68f-61437e837a7d" correctAnswer="Car"/>
+    </statements>
+    <statements xsi:type="learningcorpusquiz:FillInTheBlanksQuizStatement" xmi:id="1dd0736a-87c7-448a-a12a-e6c39b7a8b84">
+      <components xsi:type="learningcorpusquiz:Blank" xmi:id="794da46b-defc-4c60-a0eb-cc95a41c1be4" correctAnswer="Wheel"/>
+      <components xsi:type="learningcorpusquiz:NonBlank" xmi:id="e2da83f3-57d2-4e23-9f3a-ba5026359033" text=" isA VehiclePart"/>
+    </statements>
+    <statements xsi:type="learningcorpusquiz:FillInTheBlanksQuizStatement" xmi:id="63dd0d89-6666-43db-86b7-14f82ac3f4bd">
+      <components xsi:type="learningcorpusquiz:NonBlank" xmi:id="e507b9e4-b597-4dad-b95b-f994d97d6ba5" text="Truck isA "/>
+      <components xsi:type="learningcorpusquiz:Blank" xmi:id="0a02f227-1c99-49bb-baf4-26f26df943bc" correctAnswer="LandVehicle"/>
+    </statements>
+    <statements xsi:type="learningcorpusquiz:FillInTheBlanksQuizStatement" xmi:id="70f95e66-3733-43cf-af70-eb36496cb28b">
+      <components xsi:type="learningcorpusquiz:NonBlank" xmi:id="00963626-6e5b-4dbe-b721-9bed5631bc1d" text="AmphibiousVehicle isA "/>
+      <components xsi:type="learningcorpusquiz:Blank" xmi:id="43ab000a-4605-453c-a2f8-67ccacdb42d1" correctAnswer="Vehicle"/>
+    </statements>
+    <statements xsi:type="learningcorpusquiz:FillInTheBlanksQuizStatement" xmi:id="6d5d3296-a777-412d-a6e7-ec042fdbf417">
+      <components xsi:type="learningcorpusquiz:Blank" xmi:id="16b20e80-fe3d-4ec6-ab40-1de64f45ae70" correctAnswer="LuxuryBus"/>
+      <components xsi:type="learningcorpusquiz:NonBlank" xmi:id="ae681f8e-4a36-4bcf-b7a8-942f1f4489a1" text=" isA BusVehicle"/>
+    </statements>
+  </learningResources>
+  <learningResources xsi:type="learningcorpus:Reference" xmi:id="37991408-bbdf-4bf9-942b-5561c75da3fc" content="Please review the [Generalization](https://mycourses2.mcgill.ca/) part of the Class Diagram lecture." resourceResponses="91dc7223-1dba-4eda-9b78-39df12eed05b"/>
+  <learningResources xsi:type="learningcorpus:Reference" xmi:id="5fe8b7cb-0d2a-41c4-b602-a9ce32abb3a3" content="The [Abstraction-Occurrence Pattern](https://mycourses2.mcgill.ca/) can be used to &#10;represent a set of related objects that share common information but also differ&#10;from each other in an important way.&#10;&#10;![Abstraction-Occurrence Pattern](images/abstraction_occurrence.png)" resourceResponses="731a8bfe-abe2-4222-8982-c43137d7ae2e"/>
+  <mistakeTypeCategories xsi:type="learningcorpus:MistakeTypeCategory" xmi:id="3cd70019-70d2-41f3-94ba-74e9e41ca8c9" name="Class mistakes" subcategories="22c6f871-717e-4ebd-a9d8-f9c72115fadc">
+    <mistakeTypes xsi:type="learningcorpus:MistakeType" xmi:id="fc8d6b47-6807-41ae-afc3-fa5fa90d0425" learningItem="8f6e3107-858e-4fcc-a422-57c8a21aaed6" priority="10" description="Missing class" feedbacks="cca4223e-b0fb-4eaa-9b5f-a6217489ed72 4190c5b8-082d-4261-8ef1-fe6b87843ea3 b57d484e-329e-40d7-b6b3-498a335dc2b1 f67f0693-6ddf-465b-a12d-ffd005d66930 905b0412-9d90-49aa-8418-7f9af17ae061" name="Missing class">
+      <instructorElements xsi:type="learningcorpus:MistakeElement" xmi:id="344d1207-4341-41c8-bccc-b8dc13c1c2ad" name="cls" type="Class"/>
+    </mistakeTypes>
+  </mistakeTypeCategories>
+  <mistakeTypeCategories xsi:type="learningcorpus:MistakeTypeCategory" xmi:id="07f24520-2a40-40a2-899c-a212e3ed727a" name="Attribute mistakes" subcategories="b11a9f4c-ff56-4024-8ff5-a822e2633e5f 3a8d0e36-99fe-40b1-a07f-e9a42aa6f110 a8aba2cc-6fbf-42ca-91d6-c7ae97b39ce7"/>
+  <mistakeTypeCategories xsi:type="learningcorpus:MistakeTypeCategory" xmi:id="ac5e8962-43dd-42c6-82c1-1ecf69ed2830" name="Relationship mistakes" subcategories="3897597f-73fc-40e9-a371-bced68c7c5cf 114c0e22-658d-43df-8e4b-8958ab46ca4d 05973f22-3243-4771-9d41-8fa2d7075568 f28f0145-6edf-4403-a918-64958f9219fd 0435963f-fdb5-4df6-842a-c7b72f1082c2"/>
+  <mistakeTypeCategories xsi:type="learningcorpus:MistakeTypeCategory" xmi:id="975f8f9d-8052-448a-a898-417708f1798d" name="Design pattern mistakes" subcategories="761c830b-ba81-4912-9249-987dbc9b0f44"/>
+  <mistakeTypeCategories xsi:type="learningcorpus:MistakeTypeCategory" xmi:id="22c6f871-717e-4ebd-a9d8-f9c72115fadc" supercategory="3cd70019-70d2-41f3-94ba-74e9e41ca8c9" name="Class name mistakes">
+    <mistakeTypes xsi:type="learningcorpus:MistakeType" xmi:id="520eb47b-3c43-4f8e-962b-bc9023627352" learningItem="8f6e3107-858e-4fcc-a422-57c8a21aaed6" priority="1" atomic="true" description="Plural class name" feedbacks="f3cf8560-1427-4efe-9f1a-c7d9f39bfd05 1a0553cc-6eb5-49e0-8937-41bc8fe1c687 ded7d790-e129-456d-aeff-e32a426d32ca df8d9fa2-a0e7-49b3-9460-f8ddfd1f00ae 9b83ea5d-dbb0-4908-864b-280301f21127" name="Plural class name">
+      <studentElements xsi:type="learningcorpus:MistakeElement" xmi:id="abaa09ab-0015-414b-a53e-76a9ecefe045" name="cls" type="Class"/>
+      <instructorElements xsi:type="learningcorpus:MistakeElement" xmi:id="43699491-70ff-4bfa-a7f8-eb273b2db07a" name="cls" type="Class"/>
+    </mistakeTypes>
+    <mistakeTypes xsi:type="learningcorpus:MistakeType" xmi:id="214229db-1a44-431b-adcf-8748169a3f88" learningItem="8f6e3107-858e-4fcc-a422-57c8a21aaed6" priority="2" atomic="true" description="Software engineering term" feedbacks="8ef84e6a-ebcc-4439-914b-b030b793aebb edb3929a-e26b-42cf-ac3d-0416f4b38d27 692bddb9-5b00-4f48-933f-1c90aaa575b8 1c55c2c7-4874-4759-91ec-955e1fc32606 909fe06b-73b7-4202-a731-8335a0bcc0bb" name="Software engineering term">
+      <studentElements xsi:type="learningcorpus:MistakeElement" xmi:id="460cf90b-63dd-441b-ae5d-1e677690e75e" name="cls" type="Class"/>
+      <instructorElements xsi:type="learningcorpus:MistakeElement" xmi:id="53fb9c15-3005-4315-8ac1-833858d50161" name="cls" type="Class"/>
+    </mistakeTypes>
+  </mistakeTypeCategories>
+  <mistakeTypeCategories xsi:type="learningcorpus:MistakeTypeCategory" xmi:id="b11a9f4c-ff56-4024-8ff5-a822e2633e5f" supercategory="07f24520-2a40-40a2-899c-a212e3ed727a" name="Attribute name mistakes">
+    <mistakeTypes xsi:type="learningcorpus:MistakeType" xmi:id="ce588250-cc62-4639-97ac-a36cfc5bd6bf" learningItem="b453c98f-45e1-48c9-a673-ef47b0bab971" priority="3" description="Bad attribute name spelling" feedbacks="f8764bd6-060c-4181-84aa-50e7b07b160e 95e532a3-d538-48be-9618-fa46faaaaaf8 acffa30d-5358-464b-a970-f8a325bb20e9 f59984fd-e21b-40f9-9016-c60a2289765a 5b751985-9332-47e6-80f4-e58cbec960e3" name="Bad attribute name spelling">
+      <studentElements xsi:type="learningcorpus:MistakeElement" xmi:id="4d51c06f-57fa-4b37-8a43-78230fb539be" name="attr" type="Attribute"/>
+      <instructorElements xsi:type="learningcorpus:MistakeElement" xmi:id="219084ca-a376-4662-b119-24388bf2ed44" name="attr" type="Attribute"/>
+    </mistakeTypes>
+  </mistakeTypeCategories>
+  <mistakeTypeCategories xsi:type="learningcorpus:MistakeTypeCategory" xmi:id="3a8d0e36-99fe-40b1-a07f-e9a42aa6f110" supercategory="07f24520-2a40-40a2-899c-a212e3ed727a" name="Attribute in wrong class mistakes">
+    <mistakeTypes xsi:type="learningcorpus:MistakeType" xmi:id="9d83f996-d0f6-4268-9e75-d783a2f9dda1" learningItem="b453c98f-45e1-48c9-a673-ef47b0bab971" priority="5" description="Attribute misplaced" feedbacks="e5358209-2643-472a-a8de-834010ce16cc 3fb57bca-3a79-48da-916c-d6f8552d3f4c 74f64e39-7ca0-4087-bca6-551e8a415338 8e0c4e96-b124-453d-a5d4-d7ccba4460f6 4b14f513-d5f8-4757-801e-e88e2d8d6782" name="Attribute misplaced">
+      <studentElements xsi:type="learningcorpus:MistakeElement" xmi:id="d1de7898-c056-48df-b9ce-d8c329cc4146" name="attr" type="Attribute"/>
+      <instructorElements xsi:type="learningcorpus:MistakeElement" xmi:id="722e74fc-5164-4756-a674-ab00dfe1e205" name="attr" type="Attribute"/>
+    </mistakeTypes>
+  </mistakeTypeCategories>
+  <mistakeTypeCategories xsi:type="learningcorpus:MistakeTypeCategory" xmi:id="a8aba2cc-6fbf-42ca-91d6-c7ae97b39ce7" supercategory="07f24520-2a40-40a2-899c-a212e3ed727a" name="Extra attribute mistakes">
+    <mistakeTypes xsi:type="learningcorpus:MistakeType" xmi:id="e0d38b7f-bda9-468d-b684-7672142596fb" learningItem="b453c98f-45e1-48c9-a673-ef47b0bab971" priority="4" description="Plural attribute" feedbacks="dfc4bce7-eb22-42fb-90d8-f9b671544988 b2dd97a4-c57e-4e66-9e8e-34fc5f535493 84b6dd71-3d40-4c60-b559-d2fb1af6b01d 20837393-f26f-47be-b925-bb8a1080d66b 6eeeb547-dfb1-43d9-afcd-816d9ae05e9a" name="Plural attribute">
+      <studentElements xsi:type="learningcorpus:MistakeElement" xmi:id="79148c96-d2ba-47e8-b5d3-cb9359fbb3af" name="attr" type="Attribute"/>
+      <instructorElements xsi:type="learningcorpus:MistakeElement" xmi:id="9997be38-f8ca-4ec5-b7c0-2a17ac8c2281" name="attr" type="Attribute"/>
+    </mistakeTypes>
+  </mistakeTypeCategories>
+  <mistakeTypeCategories xsi:type="learningcorpus:MistakeTypeCategory" xmi:id="3897597f-73fc-40e9-a371-bced68c7c5cf" supercategory="ac5e8962-43dd-42c6-82c1-1ecf69ed2830" name="Missing association/aggregation mistakes">
+    <mistakeTypes xsi:type="learningcorpus:MistakeType" xmi:id="bac099d0-1b93-4617-8276-2187a2c64ba6" learningItem="e8dcdbf7-b38c-4d8b-b7be-63603bf8b835" priority="12" description="Missing association" feedbacks="55705bc0-5aa0-43c4-9e61-3c6e44c7b515 3e6ff7be-f658-4342-a54d-370d7c49f2f8 4b06036a-52b5-4f23-968f-4014b8aa0ace d5c104da-8c3d-423b-8878-739a38693056" name="Missing association">
+      <instructorElements xsi:type="learningcorpus:MistakeElement" xmi:id="d918b4bd-b3e4-4e22-822f-b29057d4e2dc" name="assoc" type="Association"/>
+    </mistakeTypes>
+    <mistakeTypes xsi:type="learningcorpus:MistakeType" xmi:id="440e9c46-0851-42c3-a55d-fb8019e3560b" learningItem="e8dcdbf7-b38c-4d8b-b7be-63603bf8b835" priority="6" description="Using attribute instead of association" feedbacks="60f8f448-1d69-496f-8e98-403dec74704f e5d2d91c-d8de-41f2-a92f-dbcee693c4bc aac63b56-b0bd-4ed7-aec9-ef5df1bf11d2 3b39752c-5ce0-4be6-bb4e-5105dd9cfb31 e512bcc4-0fcd-499d-a985-5b69a31d54ae" name="Using attr instead of assoc">
+      <studentElements xsi:type="learningcorpus:MistakeElement" xmi:id="b554bdd5-1c8f-429d-bc91-65f7c06136ef" name="attr" type="Attribute"/>
+      <instructorElements xsi:type="learningcorpus:MistakeElement" xmi:id="08ca08f1-b899-4db7-9694-bc004635f499" name="assocend" type="AssociationEnd"/>
+    </mistakeTypes>
+  </mistakeTypeCategories>
+  <mistakeTypeCategories xsi:type="learningcorpus:MistakeTypeCategory" xmi:id="114c0e22-658d-43df-8e4b-8958ab46ca4d" supercategory="ac5e8962-43dd-42c6-82c1-1ecf69ed2830" name="Multiplicity mistakes">
+    <mistakeTypes xsi:type="learningcorpus:MistakeType" xmi:id="9fd37651-51d7-450b-b11c-c873181e0fb2" learningItem="27ee26dd-fd8f-4820-bcc1-2ee0c678810a" priority="7" description="Wrong multiplicity" feedbacks="16538905-e1d8-4551-b29a-ab32a038e831 161df24c-317c-45e7-8f0a-0b396afc0566 bea51a13-8b54-4401-ab38-da84e3e9d2af 464bd662-5760-4150-b951-7d79ed7b1bf2 719f1fc8-3a47-4b7b-acc2-1f2fe5f27f44 e3f295ac-0842-41c6-ad03-2876af5cc7b3" name="Wrong multiplicity">
+      <studentElements xsi:type="learningcorpus:MistakeElement" xmi:id="b1a0fe88-3cca-4080-9167-8e6195440096" name="assocend" type="AssociationEnd"/>
+      <instructorElements xsi:type="learningcorpus:MistakeElement" xmi:id="d6d3a1a6-f598-4915-a22a-b2a68d575ae9" name="assocend" type="AssociationEnd"/>
+    </mistakeTypes>
+  </mistakeTypeCategories>
+  <mistakeTypeCategories xsi:type="learningcorpus:MistakeTypeCategory" xmi:id="05973f22-3243-4771-9d41-8fa2d7075568" supercategory="ac5e8962-43dd-42c6-82c1-1ecf69ed2830" name="Role name mistakes">
+    <mistakeTypes xsi:type="learningcorpus:MistakeType" xmi:id="0c74cb01-9b70-4446-bf95-326faf9cb442" learningItem="27ee26dd-fd8f-4820-bcc1-2ee0c678810a" priority="13" description="Missing role name" feedbacks="efbebb68-21f1-4b15-808d-049aed432dbe 16a70c5e-0ed6-48aa-aa88-3139162e4fa3 add72220-17a6-47dc-8efa-a1db98eef483 20da5348-5eeb-4a2c-b16f-82160373f45f" name="Missing role name">
+      <studentElements xsi:type="learningcorpus:MistakeElement" xmi:id="c73e440b-63e5-4a9c-a5a9-317780c61da8" name="assocend" type="AssociationEnd"/>
+      <instructorElements xsi:type="learningcorpus:MistakeElement" xmi:id="3caf6836-ab94-4f0c-a4de-e21ddf4b6866" name="assocend" type="AssociationEnd"/>
+    </mistakeTypes>
+    <mistakeTypes xsi:type="learningcorpus:MistakeType" xmi:id="6079b5d5-11f0-4fda-b8bf-c74b058ec2ca" learningItem="27ee26dd-fd8f-4820-bcc1-2ee0c678810a" priority="8" description="Wrong role name but correct association" feedbacks="8e98850b-5cd5-4111-85c4-8c91bca3b929 c645ebfa-5104-4b57-bc79-612cf56be4f9 c725795c-a36a-497b-be57-f89211cefe57 510f9071-ab92-4b11-9b54-50acece4f23a 26b16975-212e-43bf-ba20-c33d84d9b2dc" name="Wrong role name">
+      <studentElements xsi:type="learningcorpus:MistakeElement" xmi:id="ce266803-0c46-4401-9bd4-b7a45e30ba53" name="attr" type="Attribute"/>
+    </mistakeTypes>
+  </mistakeTypeCategories>
+  <mistakeTypeCategories xsi:type="learningcorpus:MistakeTypeCategory" xmi:id="f28f0145-6edf-4403-a918-64958f9219fd" supercategory="ac5e8962-43dd-42c6-82c1-1ecf69ed2830" name="Composition mistakes">
+    <mistakeTypes xsi:type="learningcorpus:MistakeType" xmi:id="26f7816b-4d24-4c70-826a-9527f7cd67bd" learningItem="f3de7f74-9ec9-42af-9271-cd6ab4794d99" priority="9" description="Incomplete containment tree" feedbacks="86c01311-04c1-4eb7-9eb8-79e7696cbc44 ac6a429f-c15d-4b4b-bc79-bafd7a42b175 072e6306-37d4-4bd5-988d-79fe6dbd1300 e29e24eb-9c1e-4242-a023-6bd642cc7f8b d9ad8d30-570f-4c24-aba6-312dc8247edd e0d9676c-1586-414c-a2a4-5e40de98357a" name="Incomplete containment tree">
+      <studentElements xsi:type="learningcorpus:MistakeElement" xmi:id="6ceb9a61-a81e-4feb-b203-c12299876722" name="cls*" type="Class" many="true"/>
+    </mistakeTypes>
+  </mistakeTypeCategories>
+  <mistakeTypeCategories xsi:type="learningcorpus:MistakeTypeCategory" xmi:id="0435963f-fdb5-4df6-842a-c7b72f1082c2" supercategory="ac5e8962-43dd-42c6-82c1-1ecf69ed2830" name="Generalization mistakes">
+    <mistakeTypes xsi:type="learningcorpus:MistakeType" xmi:id="ca2cd7c8-434f-492e-9a8e-9413f46e77ae" learningItem="fe072300-d998-4e22-b462-01c496a9c5ae" priority="11" description="Missing generalization" feedbacks="90a541f6-b72c-4f5d-ab10-4c766984fa04 e0f482c0-3832-4cd6-a031-4531203d819c aa7affd5-b07a-4673-8512-b006f93b09c4 596fe785-c2a5-4413-891f-4d26a72e410b 91dc7223-1dba-4eda-9b78-39df12eed05b" name="Missing generalization">
+      <instructorElements xsi:type="learningcorpus:MistakeElement" xmi:id="7ab41d43-e935-4a96-971a-ea609af8a8e8" name="sub_cls" type="Class"/>
+      <instructorElements xsi:type="learningcorpus:MistakeElement" xmi:id="f63c930d-5846-4194-9c3b-96cb2f7e69d2" name="super_cls" type="Class"/>
+    </mistakeTypes>
+  </mistakeTypeCategories>
+  <mistakeTypeCategories xsi:type="learningcorpus:MistakeTypeCategory" xmi:id="761c830b-ba81-4912-9249-987dbc9b0f44" supercategory="975f8f9d-8052-448a-a898-417708f1798d" name="Abstraction-Occurrence pattern mistakes">
+    <mistakeTypes xsi:type="learningcorpus:MistakeType" xmi:id="6886714c-6515-418e-8713-a6387daffb64" learningItem="9566af68-af2b-4f59-b0c2-6f41e6877218" priority="14" description="Missing Abstraction-Occurrence pattern" feedbacks="5dff6229-94ce-4129-910c-3951a6d9d65a dc36505c-937f-489a-b75b-1817f5ae9d9d f8e2ba9a-bb33-49e4-87e8-79f390531708 731a8bfe-abe2-4222-8982-c43137d7ae2e" name="Missing AO pattern">
+      <instructorElements xsi:type="learningcorpus:MistakeElement" xmi:id="86dd8c3a-6b4a-4fea-92f0-713a8e91b593" name="abs_cls" type="Class"/>
+      <instructorElements xsi:type="learningcorpus:MistakeElement" xmi:id="dd401c7e-208a-4633-ac02-9cd15be28741" name="occ_cls" type="Class"/>
+    </mistakeTypes>
+  </mistakeTypeCategories>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="cca4223e-b0fb-4eaa-9b5f-a6217489ed72" level="1" mistakeType="fc8d6b47-6807-41ae-afc3-fa5fa90d0425" highlightProblem="true"/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="4190c5b8-082d-4261-8ef1-fe6b87843ea3" level="2" mistakeType="fc8d6b47-6807-41ae-afc3-fa5fa90d0425" text="Make sure you have modeled all the classes in the problem description."/>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="b57d484e-329e-40d7-b6b3-498a335dc2b1" level="3" mistakeType="fc8d6b47-6807-41ae-afc3-fa5fa90d0425" highlightProblem="true"/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="f67f0693-6ddf-465b-a12d-ffd005d66930" level="4" mistakeType="fc8d6b47-6807-41ae-afc3-fa5fa90d0425" text="Remember to add the ${inst_cls} class."/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="905b0412-9d90-49aa-8418-7f9af17ae061" level="5" learningResources="8ac1a9e7-d2eb-4956-ae9f-97e3e3ca45ac" mistakeType="fc8d6b47-6807-41ae-afc3-fa5fa90d0425"/>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="f3cf8560-1427-4efe-9f1a-c7d9f39bfd05" level="1" highlightSolution="true" mistakeType="520eb47b-3c43-4f8e-962b-bc9023627352"/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="1a0553cc-6eb5-49e0-8937-41bc8fe1c687" level="2" mistakeType="520eb47b-3c43-4f8e-962b-bc9023627352" text="Remember that class names should be singular."/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="ded7d790-e129-456d-aeff-e32a426d32ca" level="3" mistakeType="520eb47b-3c43-4f8e-962b-bc9023627352" text="${stud_cls} should be ${inst_cls}, using the singular."/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="df8d9fa2-a0e7-49b3-9460-f8ddfd1f00ae" level="4" learningResources="2fa97957-50a0-4ea3-a7f2-13ffde8b137d" mistakeType="520eb47b-3c43-4f8e-962b-bc9023627352"/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="9b83ea5d-dbb0-4908-864b-280301f21127" level="5" learningResources="0f6b012c-4875-4c7a-a5f0-0f87a7f31447" mistakeType="520eb47b-3c43-4f8e-962b-bc9023627352"/>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="8ef84e6a-ebcc-4439-914b-b030b793aebb" level="1" highlightSolution="true" mistakeType="214229db-1a44-431b-adcf-8748169a3f88"/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="edb3929a-e26b-42cf-ac3d-0416f4b38d27" level="2" mistakeType="214229db-1a44-431b-adcf-8748169a3f88" text="Remember that a domain model should not contain software engineering terms."/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="692bddb9-5b00-4f48-933f-1c90aaa575b8" level="3" mistakeType="214229db-1a44-431b-adcf-8748169a3f88" text="${stud_cls} contains a software engineering term (e.g., data, database, table, record), which does not belong in a domain model."/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="1c55c2c7-4874-4759-91ec-955e1fc32606" level="4" learningResources="2fa97957-50a0-4ea3-a7f2-13ffde8b137d" mistakeType="214229db-1a44-431b-adcf-8748169a3f88"/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="909fe06b-73b7-4202-a731-8335a0bcc0bb" level="5" learningResources="0f6b012c-4875-4c7a-a5f0-0f87a7f31447" mistakeType="214229db-1a44-431b-adcf-8748169a3f88"/>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="f8764bd6-060c-4181-84aa-50e7b07b160e" level="1" highlightSolution="true" mistakeType="ce588250-cc62-4639-97ac-a36cfc5bd6bf"/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="95e532a3-d538-48be-9618-fa46faaaaaf8" level="2" mistakeType="ce588250-cc62-4639-97ac-a36cfc5bd6bf" text="Double check this attribute name."/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="acffa30d-5358-464b-a970-f8a325bb20e9" level="3" mistakeType="ce588250-cc62-4639-97ac-a36cfc5bd6bf" text="The ${stud_attr.cls}.${stud_attr} attribute is misspelled.[ Use the same spelling as the problem description.]"/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="f59984fd-e21b-40f9-9016-c60a2289765a" level="4" learningResources="34a1414f-570c-4807-a32f-c7891c81140a" mistakeType="ce588250-cc62-4639-97ac-a36cfc5bd6bf"/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="5b751985-9332-47e6-80f4-e58cbec960e3" level="5" learningResources="e507ff4f-1d61-4b0c-9396-60872da90046" mistakeType="ce588250-cc62-4639-97ac-a36cfc5bd6bf"/>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="e5358209-2643-472a-a8de-834010ce16cc" level="1" highlightSolution="true" mistakeType="9d83f996-d0f6-4268-9e75-d783a2f9dda1"/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="3fb57bca-3a79-48da-916c-d6f8552d3f4c" level="2" mistakeType="9d83f996-d0f6-4268-9e75-d783a2f9dda1" text="Can you think of a better place for this attribute?"/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="74f64e39-7ca0-4087-bca6-551e8a415338" level="3" mistakeType="9d83f996-d0f6-4268-9e75-d783a2f9dda1" text="The ${stud_attr} attribute does not belong in the ${stud_attr.cls} class. Where else can we place it?"/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="8e0c4e96-b124-453d-a5d4-d7ccba4460f6" level="4" mistakeType="9d83f996-d0f6-4268-9e75-d783a2f9dda1" text="The ${stud_attr} attribute belongs in the ${inst_attr.cls} class."/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="4b14f513-d5f8-4757-801e-e88e2d8d6782" level="5" learningResources="e507ff4f-1d61-4b0c-9396-60872da90046" mistakeType="9d83f996-d0f6-4268-9e75-d783a2f9dda1"/>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="dfc4bce7-eb22-42fb-90d8-f9b671544988" level="1" highlightSolution="true" mistakeType="e0d38b7f-bda9-468d-b684-7672142596fb"/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="b2dd97a4-c57e-4e66-9e8e-34fc5f535493" level="2" mistakeType="e0d38b7f-bda9-468d-b684-7672142596fb" text="Double check this attribute name."/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="84b6dd71-3d40-4c60-b559-d2fb1af6b01d" level="3" mistakeType="e0d38b7f-bda9-468d-b684-7672142596fb" text="The ${stud_attr.cls}.${stud_attr} attribute should be singular."/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="20837393-f26f-47be-b925-bb8a1080d66b" level="4" learningResources="d692dcff-c86e-4c1b-98a8-8c82aaa66446" mistakeType="e0d38b7f-bda9-468d-b684-7672142596fb"/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="6eeeb547-dfb1-43d9-afcd-816d9ae05e9a" level="5" learningResources="e507ff4f-1d61-4b0c-9396-60872da90046" mistakeType="e0d38b7f-bda9-468d-b684-7672142596fb"/>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="55705bc0-5aa0-43c4-9e61-3c6e44c7b515" level="1" mistakeType="bac099d0-1b93-4617-8276-2187a2c64ba6" highlightProblem="true"/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="3e6ff7be-f658-4342-a54d-370d7c49f2f8" level="2" mistakeType="bac099d0-1b93-4617-8276-2187a2c64ba6" text="How should this relationship be modeled?"/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="4b06036a-52b5-4f23-968f-4014b8aa0ace" level="3" mistakeType="bac099d0-1b93-4617-8276-2187a2c64ba6" text="How would you capture the relationship between ${inst_assoc.end0.cls} and ${inst_assoc.end1.cls}?"/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="d5c104da-8c3d-423b-8878-739a38693056" level="4" learningResources="20cdae15-eb22-419f-93cc-6234eab9aecc" mistakeType="bac099d0-1b93-4617-8276-2187a2c64ba6"/>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="60f8f448-1d69-496f-8e98-403dec74704f" level="1" highlightSolution="true" mistakeType="440e9c46-0851-42c3-a55d-fb8019e3560b"/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="e5d2d91c-d8de-41f2-a92f-dbcee693c4bc" level="2" mistakeType="440e9c46-0851-42c3-a55d-fb8019e3560b" text="Remember that attributes are simple pieces of data."/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="aac63b56-b0bd-4ed7-aec9-ef5df1bf11d2" level="3" mistakeType="440e9c46-0851-42c3-a55d-fb8019e3560b" text="${stud_attr} should be its own class."/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="3b39752c-5ce0-4be6-bb4e-5105dd9cfb31" level="4" learningResources="42343ed2-fe78-4b15-85b7-2ed663371cab" mistakeType="440e9c46-0851-42c3-a55d-fb8019e3560b"/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="e512bcc4-0fcd-499d-a985-5b69a31d54ae" level="5" learningResources="20cdae15-eb22-419f-93cc-6234eab9aecc" mistakeType="440e9c46-0851-42c3-a55d-fb8019e3560b"/>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="16538905-e1d8-4551-b29a-ab32a038e831" level="1" highlightSolution="true" mistakeType="9fd37651-51d7-450b-b11c-c873181e0fb2"/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="161df24c-317c-45e7-8f0a-0b396afc0566" level="2" mistakeType="9fd37651-51d7-450b-b11c-c873181e0fb2" text="Double check this association."/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="bea51a13-8b54-4401-ab38-da84e3e9d2af" level="3" mistakeType="9fd37651-51d7-450b-b11c-c873181e0fb2" text="The multiplicity for this association end is incorrect."/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="464bd662-5760-4150-b951-7d79ed7b1bf2" level="4" mistakeType="9fd37651-51d7-450b-b11c-c873181e0fb2" text="How many ${stud_assocend.opposite.cls} instances does a ${stud_assocend.cls} have?"/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="719f1fc8-3a47-4b7b-acc2-1f2fe5f27f44" level="5" learningResources="f793785f-7676-48ed-a61a-6420ae212159" mistakeType="9fd37651-51d7-450b-b11c-c873181e0fb2"/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="e3f295ac-0842-41c6-ad03-2876af5cc7b3" level="6" learningResources="36de04af-a43d-4bc4-bd33-b92981412f6b" mistakeType="9fd37651-51d7-450b-b11c-c873181e0fb2"/>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="efbebb68-21f1-4b15-808d-049aed432dbe" level="1" highlightSolution="true" mistakeType="0c74cb01-9b70-4446-bf95-326faf9cb442"/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="16a70c5e-0ed6-48aa-aa88-3139162e4fa3" level="2" mistakeType="0c74cb01-9b70-4446-bf95-326faf9cb442" text="Can you model this relationship more precisely?"/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="add72220-17a6-47dc-8efa-a1db98eef483" level="3" mistakeType="0c74cb01-9b70-4446-bf95-326faf9cb442" text="The relationship between ${stud_assocend.cls} and ${stud_assocend.opposite.cls} is missing a role name."/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="20da5348-5eeb-4a2c-b16f-82160373f45f" level="4" learningResources="12714eb9-647a-4b0d-98f6-48912f0fd2ed" mistakeType="0c74cb01-9b70-4446-bf95-326faf9cb442"/>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="8e98850b-5cd5-4111-85c4-8c91bca3b929" level="1" highlightSolution="true" mistakeType="6079b5d5-11f0-4fda-b8bf-c74b058ec2ca"/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="c645ebfa-5104-4b57-bc79-612cf56be4f9" level="2" mistakeType="6079b5d5-11f0-4fda-b8bf-c74b058ec2ca" text="Double check this role name."/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="c725795c-a36a-497b-be57-f89211cefe57" level="3" mistakeType="6079b5d5-11f0-4fda-b8bf-c74b058ec2ca" text="The ${stud_assocend} role name is not correct."/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="510f9071-ab92-4b11-9b54-50acece4f23a" level="4" mistakeType="6079b5d5-11f0-4fda-b8bf-c74b058ec2ca" text="The ${stud_assocend} role name should be changed to ${inst_assocend}."/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="26b16975-212e-43bf-ba20-c33d84d9b2dc" level="5" learningResources="12714eb9-647a-4b0d-98f6-48912f0fd2ed" mistakeType="6079b5d5-11f0-4fda-b8bf-c74b058ec2ca"/>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="86c01311-04c1-4eb7-9eb8-79e7696cbc44" level="1" highlightSolution="true" mistakeType="26f7816b-4d24-4c70-826a-9527f7cd67bd"/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="ac6a429f-c15d-4b4b-bc79-bafd7a42b175" level="2" mistakeType="26f7816b-4d24-4c70-826a-9527f7cd67bd" text="Please double-check the relationships of these classes."/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="072e6306-37d4-4bd5-988d-79fe6dbd1300" level="3" mistakeType="26f7816b-4d24-4c70-826a-9527f7cd67bd" text="${stud_cls*} should be contained in the containment tree.[ Use composition for this.]"/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="e29e24eb-9c1e-4242-a023-6bd642cc7f8b" level="4" learningResources="8b9b385e-05ec-4f8e-88d7-40d7f8c1b1e1" mistakeType="26f7816b-4d24-4c70-826a-9527f7cd67bd"/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="d9ad8d30-570f-4c24-aba6-312dc8247edd" level="5" learningResources="b5cfcb18-a262-4ec4-b3e5-b792d281120f" mistakeType="26f7816b-4d24-4c70-826a-9527f7cd67bd"/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="e0d9676c-1586-414c-a2a4-5e40de98357a" level="6" learningResources="20cdae15-eb22-419f-93cc-6234eab9aecc" mistakeType="26f7816b-4d24-4c70-826a-9527f7cd67bd"/>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="90a541f6-b72c-4f5d-ab10-4c766984fa04" level="1" mistakeType="ca2cd7c8-434f-492e-9a8e-9413f46e77ae" highlightProblem="true"/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="e0f482c0-3832-4cd6-a031-4531203d819c" level="2" mistakeType="ca2cd7c8-434f-492e-9a8e-9413f46e77ae" text="What is the relationship between these classes?"/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="aa7affd5-b07a-4673-8512-b006f93b09c4" level="3" mistakeType="ca2cd7c8-434f-492e-9a8e-9413f46e77ae" text="A ${inst_sub_cls} is a ${inst_super_cls}. How should we model this?"/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="596fe785-c2a5-4413-891f-4d26a72e410b" level="4" learningResources="253fdd17-ef7a-4e5b-954b-f75a1b08d91b" mistakeType="ca2cd7c8-434f-492e-9a8e-9413f46e77ae"/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="91dc7223-1dba-4eda-9b78-39df12eed05b" level="5" learningResources="37991408-bbdf-4bf9-942b-5561c75da3fc" mistakeType="ca2cd7c8-434f-492e-9a8e-9413f46e77ae"/>
+  <feedbacks xsi:type="learningcorpus:Feedback" xmi:id="5dff6229-94ce-4129-910c-3951a6d9d65a" level="1" mistakeType="6886714c-6515-418e-8713-a6387daffb64" highlightProblem="true"/>
+  <feedbacks xsi:type="learningcorpus:TextResponse" xmi:id="dc36505c-937f-489a-b75b-1817f5ae9d9d" level="2" mistakeType="6886714c-6515-418e-8713-a6387daffb64" text="Think carefully about how to model the relationship between these concepts."/>
+  <feedbacks xsi:type="learningcorpus:ParametrizedResponse" xmi:id="f8e2ba9a-bb33-49e4-87e8-79f390531708" level="3" mistakeType="6886714c-6515-418e-8713-a6387daffb64" text="The concepts of ${inst_abs_cls} and ${inst_occ_cls} and the relationship between them should be modeled with the Abstraction-Occurrence pattern."/>
+  <feedbacks xsi:type="learningcorpus:ResourceResponse" xmi:id="731a8bfe-abe2-4222-8982-c43137d7ae2e" level="4" learningResources="5fe8b7cb-0d2a-41c4-b602-a9ce32abb3a3" mistakeType="6886714c-6515-418e-8713-a6387daffb64"/>
+</learningcorpus:LearningCorpus>

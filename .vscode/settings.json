@@ -1,0 +1,29 @@
+{
+  "editor.rulers": [120],
+  "python.autoComplete.extraPaths": [
+    "modelingassistant/pythonapp",
+    "modelingassistant/pythonapp/classdiagram",
+    "modelingassistant/pythonapp/modelingassistant",
+    "problemstatementgenerator/pythonapp",
+  ],
+  "python.analysis.extraPaths": [
+    "modelingassistant/pythonapp",
+    "modelingassistant/pythonapp/classdiagram",
+    "modelingassistant/pythonapp/modelingassistant",
+    "problemstatementgenerator/pythonapp"
+  ],
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.linting.ignorePatterns": [
+    ".vscode/*.py",
+    "modelingassistant/pythonapp/classdiagram/*",
+    "modelingassistant/pythonapp/learningcorpus/*",
+    "modelingassistant/pythonapp/modelingassistant/*"
+  ],
+  "java.configuration.updateBuildConfiguration": "disabled",
+  "python.testing.pytestArgs": [
+    "."
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
+}
